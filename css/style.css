@@ -1,0 +1,110 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+  width: 630px;
+  padding: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 -15px;
+}
+
+.col {
+  padding: 0 15px;
+}
+
+canvas {
+  outline: 1px solid #282828;
+  display: block;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+  margin: auto;
+}
+
+.actions-group.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.separator {
+  width: 100%;
+  height: 2px;
+  background: #000;
+  margin: 15px 0;
+}
+
+.button {
+  display: block;
+  width: 200px;
+  height: 40px;
+  background: #6d6d6d;
+  font-size: 16px;
+  border: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #fff;
+  cursor: pointer;
+}
+
+button.disabled {
+  pointer-events: none;
+  user-select: none;
+  opacity: 0.5;
+}
+
+button:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.button.yellow {
+  background-color: rgb(240, 240, 19);
+}
+
+.button.blue {
+  background-color: rgb(2, 2, 221);
+}
+
+.button.green {
+  background-color: rgb(2, 156, 2);
+}
+
+.button.red {
+  background-color: rgb(230, 3, 3);
+}
+
+
+.button:hover {
+  background-color: #333333;
+  color: #fff;
+}
+
+.result {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100px;
+  border: 1px solid #282828;
+}
+
+.result p {
+  font-size: 100px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #282828;
+}

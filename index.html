@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Netural Network</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main>
+    <div class="row">
+      <div class="col">
+        <canvas id="canvas"></canvas>
+      </div>
+
+      <div class="col">
+        <div class="actions">
+          <div class="actions-group">
+            <button type="button" class="button yellow" id="add-btn">Add Data</button>
+            <button type="button" class="button blue disabled" id="check-btn">Check Result</button>
+            <button type="button" class="button" id="clear-btn">Clear Canvas</button>
+          </div>
+          <div class="result">
+            <p id="result-number">?</p>
+          </div>
+          <div class="actions-group hidden" id="has-result">
+            <button type="button" class="button green" id="correct-btn">Correct Answer</button>
+            <button type="button" class="button red" id="wrong-btn">Wrong Answer</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+  </main>
+
+  <script src="//unpkg.com/brain.js"></script>
+  <script src="js/network.js"></script>
+  <script src="js/canvas.js"></script>
+</body>
+</html>
